@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://todo-app-backend-20ol.onrender.com/api';
+const API_URL = 'https://todo-app-backend-20ol.onrender.com/api/tasks/';
 
 
 export const getTasks = () => axios.get(API_URL);
