@@ -1,0 +1,40 @@
+.dashboard {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark-mode-toggle {
+    background: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .date {
+    color: gray;
+  }
+  
+  .banner {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .tasks-section {
+    margin-top: 20px;
+  }
+  

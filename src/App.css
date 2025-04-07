@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+}
+
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+.dark-mode .dashboard, .dark-mode .todo-box {
+  background: #333;
+  color: white;
+}

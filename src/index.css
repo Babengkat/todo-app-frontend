@@ -1,0 +1,185 @@
+/* Global Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.light {
+  background: linear-gradient(to bottom, pink, rgb(252, 116, 206));
+  color: #333;
+}
+
+body.dark {
+  background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(95, 95, 95));
+  color: #ffffff;
+}
+
+/* ======= Main Container ======= */
+.dashboard {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ======= Sidebar ======= */
+.sidebar {
+  width: 250px;
+  background: #ff4d4f;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  position: relative;
+}
+
+.sidebar img.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.sidebar button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* ======= Header & Banner ======= */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dark .header {
+  background: #2c2c2c;
+  border-bottom: 2px solid #444;
+}
+
+.banner img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ======= Task Section ======= */
+.task-section {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark .task-section {
+  background: #2c2c2c;
+}
+
+/* ======= Filter Buttons ======= */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filter-buttons button {
+  background: white;
+  border: 1px solid #ff4d4f;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.filter-buttons .active {
+  background: #ff4d4f;
+  color: white;
+}
+
+/* ======= Add Task ======= */
+.add-task-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-container input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-task-button {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* ======= Task List ======= */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.task-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* ======= Dark Mode ======= */
+.dark .task-section,
+.dark .task-list li {
+  background: #333;
+  color: white;
+}
