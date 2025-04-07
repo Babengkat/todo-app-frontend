@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://todo-app-backend-20ol.onrender.com'; // Django backend URL
+const API_URL = 'https://todo-app-backend-20ol.onrender.com/api/tasks/';
+
 
 export const getTasks = () => axios.get(API_URL);
 export const addTask = (task) => axios.post(API_URL, task);
